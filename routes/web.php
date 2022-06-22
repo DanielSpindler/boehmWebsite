@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 #Show all Products
-Route::get('/products', [ProductController::class, 'index'])->name('products');
+Route::get('/products', 'UserController@index')->name('products');
 
 #Add New product
 Auth::routes();
