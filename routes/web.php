@@ -37,8 +37,6 @@ Route::get('/product/update/news', [ProductAddController::class, 'newsUpdatePage
 Route::post('/product/update/news', [ProductAddController::class, 'newsUpdate'])->middleware('auth');
 
 #Add New news
-Auth::routes();
-
 Route::get('/product/add/news', [ProductAddController::class, 'newsPage'])->name('newsAdd')->middleware('auth');
 Route::post('/product/add/news', [ProductAddController::class, 'newsAdd'])->middleware('auth');
 
