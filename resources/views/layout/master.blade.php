@@ -44,7 +44,7 @@
                    aria-current="page">Produkte</a>
             </li>
             <li>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                <a href="mailto:bewerbung@daniel-spindler.de"
                    class="rounded ml-8 text-black p-2
                    hover:-translate-y-1 hover:scale-110 duration-300" aria-current="page">Kontakt</a>
             </li>
@@ -113,14 +113,5 @@
     </ul>
 </footer>
 </body>
-<style>
-    .test {
-        position: absolute;
-        right: 0;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-</style>
+
 </html>
