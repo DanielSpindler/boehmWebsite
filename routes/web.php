@@ -16,46 +16,39 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+#Auth
+Auth::routes();
+
+#Adminpanel
+Route::get('/admin', function () {
+    return view('admin');
+})->middleware('auth');
 
 #Home
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 #Show all Products
 Route::get('/products', [ProductController::class, 'index'])->name('products');
-
+#show Products by id
+Route::get('products/{id}', [ProductController::class, 'singleProduct'])->name('singleProduct');
 #Add New product
-Auth::routes();
-
 Route::get('/product/add/product', [ProductAddController::class, 'index'])->name('productAdd')->middleware('auth');
 Route::post('/product/add/product', [ProductAddController::class, 'add'])->middleware('auth');
-
 #Update product
 Route::get('/product/update/product', [ProductAddController::class, 'productUpdatePage'])->name('updateProduct')->middleware('auth');
 Route::post('/product/update/product', [ProductAddController::class, 'productUpdate'])->middleware('auth');
-
-#Update News
-Route::get('/product/update/news', [ProductAddController::class, 'newsUpdatePage'])->name('updateNews')->middleware('auth');
-Route::post('/product/update/news', [ProductAddController::class, 'newsUpdate'])->middleware('auth');
-
-#Add New news
-Route::get('/product/add/news', [ProductAddController::class, 'newsPage'])->name('newsAdd')->middleware('auth');
-Route::post('/product/add/news', [ProductAddController::class, 'newsAdd'])->middleware('auth');
-
-#Remove Existing Products
+#Delete Existing Products
 Route::get('/product/delete', [ProductAddController::class, 'deletePage'])->name('productDelete')->middleware('auth');
 Route::post('/product/delete', [ProductAddController::class, 'delete'])->middleware('auth');
 
-#Remove Existing News
-Route::get('/product/delete/news', [ProductAddController::class, 'deleteNewsPage'])->name('newsDelete')->middleware('auth');
-Route::post('/product/delete/news', [ProductAddController::class, 'deleteNews'])->middleware('auth');
-
-#show Products by id
-Route::get('products/{id}', [ProductController::class, 'singleProduct'])->name('singleProduct');
-
 #show News by id
 Route::get('news/{id}', [ProductController::class, 'singleNews'])->name('singleNews');
-
-#Adminpanel
-Route::get('/admin', function () {
-    return view('admin');
-})->middleware('auth');
+#Add New news
+Route::get('/product/add/news', [ProductAddController::class, 'newsPage'])->name('newsAdd')->middleware('auth');
+Route::post('/product/add/news', [ProductAddController::class, 'newsAdd'])->middleware('auth');
+#Update News
+Route::get('/product/update/news', [ProductAddController::class, 'newsUpdatePage'])->name('updateNews')->middleware('auth');
+Route::post('/product/update/news', [ProductAddController::class, 'newsUpdate'])->middleware('auth');
+#Delete Existing News
+Route::get('/product/delete/news', [ProductAddController::class, 'deleteNewsPage'])->name('newsDelete')->middleware('auth');
+Route::post('/product/delete/news', [ProductAddController::class, 'deleteNews'])->middleware('auth');

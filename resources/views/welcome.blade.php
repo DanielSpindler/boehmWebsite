@@ -5,7 +5,7 @@
         <div class="flex justify-center mt-12">
             <div class="rounded-xl w-4/5">
                 <h1 class="text-xl text-center">Home</h1>
-                <div class="rounded-xl">
+                <div class="rounded-xl mt-12">
                     <div class="w-full rounded-xl flex gap-3 snap-mandatory overflow-scroll">
                         @for($i = 0; $i < count($products); $i++)
                             <div
@@ -29,7 +29,6 @@
         </div>
         <div class="flex justify-center mt-12 mb-4">
             <div class=" w-3/5  justify-center overflow-y-hidden shadow-2xl border border-2 p-4 rounded-full">
-                <h2 class="text-center text-xl font-bold">NEWS</h2>
 
                 <div class="w-full rounded-xl flex gap-3 snap-mandatory overflow-x-scroll p-4">
                     @foreach($news as $item)
