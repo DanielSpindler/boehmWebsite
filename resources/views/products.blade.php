@@ -1,10 +1,10 @@
 @extends('layout.master')
 
 @section('content')
-    <div class="h-screen">
+    <div class="h-screen overflow-auto">
         <h1 class="text-xl mt-12 text-center">Produkte</h1>
         <div class="flex justify-center mt-12 mb-4">
-            <div class="grid grid-cols-3 gap-6 rounded-xl">
+            <div class="grid grid-cols-3 gap-6 rounded-xl ">
                 @foreach($products as $product)
                     <a href="{{route('singleProduct',$product->id)}}">
                         <div
