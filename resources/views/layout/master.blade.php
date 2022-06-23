@@ -80,7 +80,7 @@
     </div>
 </header>
 <div class="flex justify-center rounded-xl">
-    <div class="text-black bg-slate-100 shadow-2xl w-4/5 ">
+    <div class="text-black bg-slate-100 shadow-2xl w-4/5 h-screen ">
         @yield('content')
         <div class="z-50">
         </div>
