@@ -11,9 +11,9 @@
 <body class="bg-white opacity-[.98]"
       style="font-family: Futura">
 <header class="flex inline-block">
-    <div class="relative flex flex-auto justify-center">
-        <ul class="flex flex-row mx-auto my-auto font-normal opacity-[.80]  rounded-b fixed z-40 items-center pt">
-            <li class="">
+    <div class="flex flex-auto justify-center">
+        <ul class="flex flex-row mx-auto my-auto font-normal opacity-[.80] rounded-b fixed z-40 items-center pt">
+            <li>
                 <img
                     src="https://watchmecraft.com/_ipx/w_384,q_75/https%3A%2F%2Fwmc-euw.b-cdn.net%2Fprofile%2Fdb.custom.bikes%2Fprofile_pic.webp?url=https%3A%2F%2Fwmc-euw.b-cdn.net%2Fprofile%2Fdb.custom.bikes%2Fprofile_pic.webp&w=384&q=75"
                     width="50" height="50" class="rounded-full">
@@ -80,7 +80,7 @@
     </div>
 </header>
 <div class="flex justify-center rounded-xl">
-    <div class="text-black bg-slate-100 shadow-2xl w-4/5 h-screen ">
+    <div class="text-black bg-slate-100 shadow-2xl w-4/5">
         @yield('content')
         <div class="z-50">
         </div>

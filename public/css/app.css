@@ -806,8 +806,14 @@ video {
 .self-center {
   align-self: center;
 }
+.overflow-auto {
+  overflow: auto;
+}
 .overflow-hidden {
   overflow: hidden;
+}
+.overflow-clip {
+  overflow: clip;
 }
 .overflow-scroll {
   overflow: scroll;
@@ -817,6 +823,9 @@ video {
 }
 .overflow-x-scroll {
   overflow-x: scroll;
+}
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 .rounded {
   border-radius: 0.25rem;
@@ -952,6 +961,9 @@ video {
 }
 .pt-1 {
   padding-top: 0.25rem;
+}
+.pb-4 {
+  padding-bottom: 1rem;
 }
 .text-center {
   text-align: center;
