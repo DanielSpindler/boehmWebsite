@@ -32,9 +32,9 @@
                 <div class="w-full rounded-xl flex gap-3 snap-mandatory overflow-x-scroll">
                     @foreach($news as $item)
                         <a href="{{route('singleNews',$item->id)}}"
-                           class="last:mr-8 transition ease-in-out delay-150 rounded-xl hover:-translate-y-1 hover:scale-95 hover:bg-slate-500 duration-300">
+                           class="last:mr-8 transition ease-in-out delay-150 rounded-xl hover:-translate-y-1 hover:scale-95  duration-300">
                             <div
-                                class="bg-white w-60 border-b-4 border-blue-500  rounded-xl hover:bg-slate-900 hover:text-white">
+                                class="bg-white w-60 border-b-4 border-blue-500  rounded-xl hover:bg-slate-500 hover:text-white">
                                 <div class="snap-center shrink-0 shadow-2xl rounded-xl">
                                     <div class="flex flex-col p-4 md:p-6 justify-around">
                                         <p class="text-blue-500 font-semibold text-xs mb-1 leading-none">News</p>
