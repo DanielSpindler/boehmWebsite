@@ -11,7 +11,7 @@
                             <div class="flex flex-col p-4 h-full md:p-6 justify-around">
                                 <p class="text-blue-500 font-semibold text-xs mb-1 leading-none">News</p>
                                 <h3 class="font-semibold mb-2 text-xl leading-tight sm:leading-normal">{{$item->title}}</h3>
-                                <h3 class=" mb-2 text-xl leading-tight sm:leading-normal">{{$item->contents}}</h3>
+                                <h3 class="mb-2 text-xl leading-tight sm:leading-normal">{{$item->contents}}</h3>
 
                                 <div class="">
                                     <svg class="opacity-75 inline align-baseline" xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,6 @@
                                             d="M73.898,47.08H52.066V20.83c0-2.209-1.791-4-4-4c-2.209,0-4,1.791-4,4v30.25c0,2.209,1.791,4,4,4h25.832    c2.209,0,4-1.791,4-4S76.107,47.08,73.898,47.08z"/>
       </svg>
                                     <p class="leading-none inline-block">{{$item->created_at}}</p>
-
                                 </div>
                                 <form method="post" class="text-center">
                                     @csrf

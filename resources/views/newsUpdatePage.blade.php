@@ -15,7 +15,7 @@
                                     <h3 class="font-semibold mb-2 text-xl leading-tight sm:leading-normal border border-2 rounded-l">
                                         <input
                                             type="text" name="title" required value="{{$item->title}}"></h3>
-                                    <h3 class=" mb-2 text-xl leading-tight sm:leading-normal border border-2  rounded-l">
+                                    <h3 class=" mb-2 text-xl leading-tight sm:leading-normal border border-2 rounded-l">
                                         <input type="text"
                                                name="contents"
                                                class="w-full"
@@ -33,9 +33,7 @@
                                                 d="M73.898,47.08H52.066V20.83c0-2.209-1.791-4-4-4c-2.209,0-4,1.791-4,4v30.25c0,2.209,1.791,4,4,4h25.832    c2.209,0,4-1.791,4-4S76.107,47.08,73.898,47.08z"/>
       </svg>
                                         <p class="leading-none inline-block">{{$item->created_at}}</p>
-
                                     </div>
-
                                     <input type="hidden" name="id" value="{{$item->id}}" readonly>
                                     <input type="submit" class="inline-flex items-center justify-center p-1 mb-2 mr-2 overflow-hidden
                 text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 cursor-pointer group-hover:from-cyan-500
