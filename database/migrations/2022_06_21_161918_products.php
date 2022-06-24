@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id()->autoIncrement();
-            $table->string('name')->unique();
-            $table->string('description');
+            $table->string('name');
+            $table->longText('description');
             $table->double('price');
             $table->integer('stock');
             $table->timestamps();

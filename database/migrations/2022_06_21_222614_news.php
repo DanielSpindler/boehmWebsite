@@ -14,8 +14,8 @@ return new class extends Migration {
     {
         Schema::create('news', function (Blueprint $table) {
             $table->id()->autoIncrement();
-            $table->string('title')->unique();
-            $table->string('contents');
+            $table->string('title');
+            $table->longText('contents');
             $table->timestamps();
         });
     }

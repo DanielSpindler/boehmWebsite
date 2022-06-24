@@ -3,7 +3,7 @@
 @section('content')
     <form method="post">
         @csrf
-        <section class="text-gray-700 body-font overflow-hidden bg-white h-screen mt-10 flex justify-center">
+        <section class="text-gray-700 body-font overflow-hidden h-screen mt-10 flex justify-center">
             <div class="container px-5 py-24">
                 <div class="lg:w-4/5 mx-auto flex flex-wrap">
                     <input name="img" type="file" class="border border-2 border-black w-80 h-80" required>
