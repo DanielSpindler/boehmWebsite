@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\News;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 use mysql_xdevapi\Exception;
 
 class ProductAddController extends Controller
@@ -16,12 +18,15 @@ class ProductAddController extends Controller
 
     public function add(Request $request)
     {
-
         $product = new Product;
         $product->name = $request->name;
         $product->description = $request->description;
         $product->price = $request->price;
         $product->stock = $request->stock;
+        $file = $request->file('image');
+        $filename = date('YmdHi') . $file->getClientOriginalName();
+        $file->move(public_path('/images'), $filename);
+        $product->image = $filename;
         $product->save();
 
         return redirect()->back();
@@ -41,6 +46,8 @@ class ProductAddController extends Controller
 
     public function delete(Request $request)
     {
+        File::delete(public_path('/images/'.$request->image));
+
         Product::where('id', $request->id)
             ->delete();
 

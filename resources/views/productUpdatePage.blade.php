@@ -7,7 +7,7 @@
             <div class="grid grid-cols-3 gap-6 mb-12">
                 @foreach($products as $product)
                     <div class="w-80 h-120 shadow-2xl rounded-xl">
-                        <img class="rounded-lg shadow-xl bg-white w-80 h-80" src="../../test-dominik.jpeg">
+                        <img class="rounded-lg shadow-xl bg-white w-80 h-80" src="../../images/{{$product->image}}">
                         <form method="post" class="text-center">
                             @csrf
                             <div class="text-center mt-2 "><input type="text" name="name" required

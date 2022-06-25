@@ -5,24 +5,17 @@
         <h1 class="text-xl mt-12 text-center">News Hinzufügen</h1>
         <form method="post">
             @csrf
-
             <div class="flex justify-center rounded-xl">
                 <div class="rounded-xl mb-8">
                     <div class="mt-12">
-
                         <div class="max-w-sm rounded overflow-hidden shadow-2xl bg-slate-200">
                             <h1 class="text-2xl mb-8 mt-2 font-bold text-center"></h1>
                             <div class="px-6 py-4">
-                                <div class=" text-xl text-left mb-2"><input name="title" type="text" placeholder="Titel" required></div>
-                                <textarea name="contents"  type="text" placeholder="Inhalt" required></textarea>
+                                <div class=" text-xl text-left mb-2"><input name="title" type="text" placeholder="Titel"
+                                                                            required></div>
+                                <textarea name="contents" type="text" placeholder="Inhalt" required></textarea>
                             </div>
                         </div>
-
-
-
-
-
-
 
 
                         <input type="submit">

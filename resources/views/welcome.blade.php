@@ -11,7 +11,7 @@
                                 class="snap-center w-80 h-120 shrink-0  shadow-inner shadow-2xl shadow-sky-500 rounded-xl m-2 transition ease-in-out
                                  rounded-xl hover:-translate-y-1 hover:scale-95 duration-300">
                                 <a href="{{route('singleProduct',$products[$i]->id)}}">
-                                    <img class=" rounded-lg shadow-xl" src="test-dominik.jpeg">
+                                    <img class=" rounded-lg shadow-xl" src="images/{{$products[$i]->image}}">
                                 </a>
                                 <div class="text-center mt-2">{{$products[$i]->name}}
                                 </div>

@@ -8,7 +8,7 @@
                     <div class="w-80 hover:-translate-y-1 hover:scale-95 duration-300 h-auto shadow-2xl rounded-xl">
                         <div class="h-full">
                             <a href="{{route('singleProduct',$product->id)}}">
-                                <img class="rounded-lg shadow-xl bg-white" src="../test-dominik.jpeg">
+                                <img class="rounded-lg shadow-xl bg-white" src="images/{{$product->image}}">
                             </a>
                             <div class="text-center mt-2 ">{{$product->name}}</div>
                             <div class="text-center mt-2">{{$product->price}} €</div>

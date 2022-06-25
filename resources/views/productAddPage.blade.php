@@ -1,12 +1,15 @@
 @extends('layout.master')
 
 @section('content')
-    <form method="post">
+
+    <form enctype="multipart/form-data" method="post">
         @csrf
         <section class="text-gray-700 body-font overflow-hidden h-screen mt-10 flex justify-center">
             <div class="container px-5 py-24">
                 <div class="lg:w-4/5 mx-auto flex flex-wrap">
-                    <input name="img" type="file" class="border border-2 border-black w-80 h-80" required>
+                    <div>
+                        <input name="image" type="file" class="border border-2 border-black w-80 h-80" required>
+                    </div>
                     <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                         <h2 class="text-sm title-font text-gray-500 tracking-widest">BRAND NAME</h2>
                         <h1 class="text-gray-900 text-3xl title-font font-medium mb-1"><input name="name" type="text"
