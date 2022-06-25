@@ -26,7 +26,10 @@ Route::get('/admin', function () {
 
 #Home
 Route::get('/', [HomeController::class, 'index'])->name('home');
-
+#About Page
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
 #Show all Products
 Route::get('/products', [ProductController::class, 'index'])->name('products');
 #show Products by id
@@ -52,3 +55,9 @@ Route::post('/product/update/news', [ProductAddController::class, 'newsUpdate'])
 #Delete Existing News
 Route::get('/product/delete/news', [ProductAddController::class, 'deleteNewsPage'])->name('newsDelete')->middleware('auth');
 Route::post('/product/delete/news', [ProductAddController::class, 'deleteNews'])->middleware('auth');
+
+
+#Impressum
+Route::get('/impressum', function () {
+    return view('impressum');
+})->name('impressum');

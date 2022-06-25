@@ -1,16 +1,16 @@
 @extends('layout.master')
 
 @section('content')
-    <div class="h-screen overflow-auto">
+    <div class="h-screen overflow-auto ">
+
         <div class="flex justify-center mt-12">
             <div class="rounded-xl w-4/5">
-                <h1 class="text-xl text-center">Home</h1>
                 <div class="rounded-xl mt-12">
                     <div class="w-full rounded-xl flex gap-3 snap-mandatory overflow-scroll">
                         @for($i = 0; $i < count($products); $i++)
                             <div
-                                class="snap-center w-80 h-120 shrink-0 shadow-2xl rounded-xl m-2 transition ease-in-out
-                                delay-150 rounded-xl hover:-translate-y-1 hover:scale-95 hover:bg-slate-500 duration-300">
+                                class="snap-center w-80 h-120 shrink-0  shadow-inner shadow-2xl shadow-sky-500 rounded-xl m-2 transition ease-in-out
+                                 rounded-xl hover:-translate-y-1 hover:scale-95 duration-300">
                                 <a href="{{route('singleProduct',$products[$i]->id)}}">
                                     <img class=" rounded-lg shadow-xl" src="test-dominik.jpeg">
                                 </a>
@@ -26,16 +26,17 @@
                     </div>
                 </div>
             </div>
+
         </div>
         <div class="flex justify-center mt-12 mb-4">
-            <div class="w-3/5 justify-center overflow-y-hidden shadow-2xl border border-2 rounded-full">
-                <div class="w-full rounded-xl flex gap-3 snap-mandatory overflow-x-scroll">
+            <div class="w-3/5 justify-center rounded-xl">
+                <div class="flex gap-6 snap-mandatory overflow-x-scroll">
                     @foreach($news as $item)
                         <a href="{{route('singleNews',$item->id)}}"
-                           class="last:mr-8 transition ease-in-out delay-150 rounded-xl hover:-translate-y-1 hover:scale-95  duration-300">
+                           class="last:mr-8 transition ease-in-out rounded-xl shadow-inner shadow-2xl shadow-sky-500 m-2 hover:-translate-y-1 hover:scale-95  duration-300">
                             <div
-                                class="bg-white w-60 border-b-4 border-blue-500  rounded-xl hover:bg-slate-500 hover:text-white">
-                                <div class="snap-center shrink-0 shadow-2xl rounded-xl">
+                                class="w-60  rounded-xl">
+                                <div class="snap-center shrink-0 rounded-xl">
                                     <div class="flex flex-col p-4 md:p-6 justify-around">
                                         <p class="text-blue-500 font-semibold text-xs mb-1 leading-none">News</p>
                                         <h3 class="font-semibold mb-2 text-xl leading-tight sm:leading-normal hover:underline">{{$item->title}}</h3>

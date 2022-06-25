@@ -12,11 +12,9 @@
 
                         <div class="max-w-sm rounded overflow-hidden shadow-2xl bg-slate-200">
                             <h1 class="text-2xl mb-8 mt-2 font-bold text-center"></h1>
-
                             <div class="px-6 py-4">
                                 <div class=" text-xl text-left mb-2"><input name="title" type="text" placeholder="Titel" required></div>
                                 <textarea name="contents"  type="text" placeholder="Inhalt" required></textarea>
-
                             </div>
                         </div>
 
