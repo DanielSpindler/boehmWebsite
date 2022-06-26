@@ -2,9 +2,9 @@
 
 @section('content')
     <div class="h-screen">
-        <div class="flex justify-center mt-12 mx-auto rounded-xl h-4/5 w-3/5 border border-0 shadow-2xl ">
-            <div class="rounded-xl mb-8 mt-12 bg-gray">
-                <div class="w-80 h-80 shrink-0">
+        <div class="flex justify-center mt-12 mx-auto rounded-xl h-5/6 w-4/5 border border-0 shadow-2xl ">
+            <div class="rounded-xl my-auto bg-gray">
+                <div class="sm:w-80 sm:h-80 shrink-0">
 
                     <div class="max-w-sm rounded overflow-hidden shadow-2xl bg-slate-200">
                         <h1 class="text-2xl mb-8 mt-2 font-bold text-center">{{$news['title']}}</h1>

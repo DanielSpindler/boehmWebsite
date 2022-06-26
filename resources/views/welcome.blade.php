@@ -27,7 +27,7 @@
         </div>
         <div class="flex justify-center mt-12 mb-4">
             <div class="w-3/5 justify-center rounded-xl">
-                <div class="flex gap-6 snap-mandatory overflow-x-scroll">
+                <div class="flex gap-6 snap-mandatory overflow-x-scroll mt-12">
                     @foreach($news as $item)
                         <a href="{{route('singleNews',$item->id)}}"
                            class="last:mr-8  transition ease-in-out rounded-xl shadow-inner shadow-2xl shadow-sky-500 m-1 hover:-translate-y-1 hover:scale-95  duration-300">
