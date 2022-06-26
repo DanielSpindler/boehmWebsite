@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="h-screen overflow-auto bg-slate-200 rounded-xl">
-        <div class="flex flex-row mb-2 mt-20">
+        <div class="flex flex-row mb-2 mt-20 items-center ">
             <img src="../360.JPG" class="rounded-full w-1/3 h-1/3 hidden sm:flex rounded-l shadow-2xl shadow-sky-600">
             <div class="w-1/3 h-1/3 text-center"><h1 class="underline">Was der Dominik dann so sagen möchte</h1>
                 <p class=" ml-8 mt-8">

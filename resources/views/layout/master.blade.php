@@ -53,7 +53,7 @@
     </div>
 </header>
 <div class="flex justify-center rounded-xl my-4">
-    <div class="text-black bg-slate-100 shadow-2xl sm:w-4/5 w-screen rounded-xl ">
+    <div class="text-black bg-slate-100 shadow-2xl lg:w-4/5 w-screen rounded-xl ">
         <a href="{{route('home')}}">
             <img
                 src="https://watchmecraft.com/_ipx/w_384,q_75/https%3A%2F%2Fwmc-euw.b-cdn.net%2Fprofile%2Fdb.custom.bikes%2Fprofile_pic.webp?url=https%3A%2F%2Fwmc-euw.b-cdn.net%2Fprofile%2Fdb.custom.bikes%2Fprofile_pic.webp&w=384&q=75"
