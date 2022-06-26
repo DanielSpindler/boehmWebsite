@@ -8,7 +8,7 @@
                     <div class="w-full rounded-xl flex gap-3 snap-mandatory overflow-scroll">
                         @for($i = 0; $i < count($products); $i++)
                             <div
-                                class="snap-center w-80 h-120 shrink-0  shadow-inner shadow-2xl shadow-sky-500 rounded-xl m-2 transition ease-in-out
+                                class="snap-center sm:w-80 sm:h-120 shadow-inner shadow-2xl shadow-sky-500 rounded-xl m-2 transition ease-in-out
                                  rounded-xl hover:-translate-y-1 hover:scale-95 duration-300">
                                 <a href="{{route('singleProduct',$products[$i]->id)}}">
                                     <img class=" rounded-lg shadow-xl" src="images/{{$products[$i]->image}}">
@@ -34,7 +34,7 @@
                         <a href="{{route('singleNews',$item->id)}}"
                            class="last:mr-8 transition ease-in-out rounded-xl shadow-inner shadow-2xl shadow-sky-500 m-2 hover:-translate-y-1 hover:scale-95  duration-300">
                             <div
-                                class="w-60  rounded-xl">
+                                class="sm:w-60 rounded-xl w-48">
                                 <div class="snap-center shrink-0 rounded-xl">
                                     <div class="flex flex-col p-4 md:p-6 justify-around">
                                         <p class="text-blue-500 font-semibold text-xs mb-1 leading-none">News</p>
