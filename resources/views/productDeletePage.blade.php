@@ -4,7 +4,7 @@
     <div class="h-screen overflow-auto">
         <h1 class="text-xl mt-12 text-center">Produkt Löschen</h1>
         <div class="flex justify-center mt-12">
-            <div class="grid grid-cols-3 gap-6 mb-12">
+            <div class="grid grid-cols-1 gap-6 mb-12 lg:grid-cols-3 sm:grid-cols-2 lg:mx-auto">
                 @foreach($products as $product)
                     <div class="w-80 h-auto shadow-2xl rounded-xl">
                         <div class="h-full">

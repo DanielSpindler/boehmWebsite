@@ -2,9 +2,9 @@
 
 @section('content')
     <div class="h-screen overflow-auto">
-        <h1 class="text-xl mt-12 text-center">Produkt Löschen</h1>
+        <h1 class="text-xl mt-12 text-center">Produkt Updaten</h1>
         <div class="flex justify-center mt-12">
-            <div class="grid grid-cols-3 gap-6 mb-12">
+            <div class="grid grid-cols-1 gap-6 mb-12 sm:grid-cols-3">
                 @foreach($products as $product)
                     <div class="w-80 h-120 shadow-2xl rounded-xl">
                         <img class="rounded-lg shadow-xl bg-white w-80 h-80" src="../../images/{{$product->image}}">

@@ -6,8 +6,9 @@ use App\Models\News;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Storage;
+use Intervention\Image\Facades\Image;
 use mysql_xdevapi\Exception;
+
 
 class ProductAddController extends Controller
 {
@@ -23,8 +24,14 @@ class ProductAddController extends Controller
         $product->description = $request->description;
         $product->price = $request->price;
         $product->stock = $request->stock;
+
         $file = $request->file('image');
         $filename = date('YmdHi') . $file->getClientOriginalName();
+        $image= Image::make($file->path());
+        $image->resize(200, 200, function ($constraint) {
+            $constraint->aspectRatio();
+        })->save(public_path('/images'.'/'.$filename));
+
         $file->move(public_path('/images'), $filename);
         $product->image = $filename;
         $product->save();

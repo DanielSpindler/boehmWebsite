@@ -64,9 +64,9 @@
         </div>
     </div>
 </div>
-<footer class=" bg-white rounded-lg shadow flex items-center justify-between  dark:bg-gray-800">
+<footer class=" bg-white rounded-lg shadow flex items-center justify-between dark:bg-gray-800">
     <div class="">
-        <img src="../InfoLogo.jpeg" width="320" height="160" class="object-cover">
+        <img src="/InfoLogo.jpeg" width="320" height="160" class="object-cover">
     </div>
     <div class="p-4 pl-6 pr-6">
         <div style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);"

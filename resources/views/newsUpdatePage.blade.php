@@ -4,7 +4,7 @@
     <div class="h-screen overflow-auto">
         <h1 class="text-xl mt-12 text-center">News Updaten</h1>
         <div class="flex justify-center mt-12">
-            <div class="grid grid-cols-3 gap-6 mb-12">
+            <div class="grid grid-cols-2 sm:grid-cols-3 sm:gap-6 mb-12 gap-0">
                 @foreach($news as $item)
                     <div class="bg-white border-b-4 border-blue-500 h-full rounded-xl">
                         <div class="snap-center shrink-0 shadow-2xl rounded-xl h-full">
@@ -12,8 +12,8 @@
                                 <p class="text-blue-500 font-semibold text-xs mb-1 leading-none">News</p>
                                 <form method="post" class="text-center">
                                     @csrf
-                                    <h3 class="font-semibold mb-2 text-xl leading-tight sm:leading-normal border border-2 rounded-l">
-                                        <input
+                                    <h3 class="font-semibold mb-2 text-xl  leading-tight sm:leading-normal border border-2 rounded-l">
+                                        <input class="w-5/6"
                                             type="text" name="title" required value="{{$item->title}}"></h3>
                                     <h3 class=" mb-2 text-xl leading-tight sm:leading-normal border border-2 rounded-l">
                                         <input type="text"

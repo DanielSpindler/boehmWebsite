@@ -3,15 +3,14 @@
 @section('content')
     <div class="h-screen overflow-auto">
         <div class="flex justify-center mt-12 h-1/2">
-            <div class="rounded-xl md:w-5/6 lg:w-4/5 ">
+            <div class="rounded-xl md:w-5/6 ">
                 <div class="rounded-xl mt-12">
-                    <div class="w-full rounded-xl flex gap-3 snap-mandatory overflow-scroll">
+                    <div class="w-full rounded-xl flex snap-mandatory overflow-scroll">
                         @for($i = 0; $i < count($products); $i++)
                             <div
-                                class=" lg:first:ml-6 md:first:ml-4 snap-center  sm:w-80 sm:h-120 shrink-0 shadow-inner shadow-2xl shadow-sky-500 rounded-xl m-2 transition ease-in-out
-                                 rounded-xl hover:-translate-y-1 hover:scale-95 duration-300">
+                                class="snap-center  sm:w-80 sm:h-120 shrink-0 shadow-inner shadow-xl shadow-sky-500  transition ease-in-out hover:-translate-y-1 hover:scale-95 duration-300">
                                 <a href="{{route('singleProduct',$products[$i]->id)}}">
-                                    <img class=" rounded-lg shadow-xl sm:w-auto sm:h-auto w-64 h-60" src="images/{{$products[$i]->image}}">
+                                    <img class=" shadow-xl sm:w-80 sm:h-120 w-64 h-60" src="images/{{$products[$i]->image}}">
                                 </a>
                                 <div class="text-center mt-2">{{$products[$i]->name}}
                                 </div>
@@ -31,7 +30,7 @@
                 <div class="flex gap-6 snap-mandatory overflow-x-scroll">
                     @foreach($news as $item)
                         <a href="{{route('singleNews',$item->id)}}"
-                           class="last:mr-8 first:ml-4 transition ease-in-out rounded-xl shadow-inner shadow-2xl shadow-sky-500 m-2 hover:-translate-y-1 hover:scale-95  duration-300">
+                           class="last:mr-8  transition ease-in-out rounded-xl shadow-inner shadow-2xl shadow-sky-500 m-1 hover:-translate-y-1 hover:scale-95  duration-300">
                             <div
                                 class="w-52  rounded-xl">
                                 <div class="snap-center shrink-0 rounded-xl">
@@ -49,7 +48,7 @@
                                                 <path
                                                     d="M73.898,47.08H52.066V20.83c0-2.209-1.791-4-4-4c-2.209,0-4,1.791-4,4v30.25c0,2.209,1.791,4,4,4h25.832    c2.209,0,4-1.791,4-4S76.107,47.08,73.898,47.08z"/>
       </svg>
-                                            <p class="leading-none inline-block">{{$item->created_at}}</p>
+                                            <p class="leading-none inline-block -mr-4 ">{{$item->created_at}}</p>
 
                                         </div>
                                     </div>
