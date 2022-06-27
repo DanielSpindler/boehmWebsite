@@ -2,20 +2,20 @@
 
 @section('content')
     <div class="h-screen overflow-auto">
-        <div class="flex justify-center mt-12 h-1/2">
+        <div class="flex justify-center mt-12 h-1/2 border-b-2 ">
             <div class="rounded-xl md:w-5/6 ">
                 <div class="rounded-xl mt-12">
                     <div class="w-full rounded-xl flex snap-mandatory overflow-scroll">
                         @for($i = 0; $i < count($products); $i++)
                             <div
-                                class="snap-center  sm:w-80 sm:h-120 shrink-0 shadow-inner shadow-xl shadow-sky-500  transition ease-in-out hover:-translate-y-1 hover:scale-95 duration-300">
-                                <a href="{{route('singleProduct',$products[$i]->id)}}">
-                                    <img class=" shadow-xl sm:w-80 sm:h-120 w-64 h-60" src="images/{{$products[$i]->image}}">
-                                </a>
+                                class="snap-center shadow-2xl   sm:w-80 sm:h-120 shrink-0 transition ease-in-out hover:-translate-y-1 hover:scale-95 duration-300">
+                                <div class="sm:w-80 sm:h-120 w-64 h-60 overflow-hidden">
+                                    <a href="{{route('singleProduct',$products[$i]->id)}}" class="">
+                                        <img class=" shadow-xl" src="images/{{$products[$i]->image}}">
+                                    </a></div>
                                 <div class="text-center mt-2">{{$products[$i]->name}}
                                 </div>
                                 <div class="text-center mt-2">{{$products[$i]->price}} €</div>
-                                <div class="text-center mt-2">Bestand: {{$products[$i]->stock}}</div>
                             </div>
                             @if($i === 5)
                                 @php break; @endphp
@@ -30,7 +30,7 @@
                 <div class="flex gap-6 snap-mandatory overflow-x-scroll mt-12">
                     @foreach($news as $item)
                         <a href="{{route('singleNews',$item->id)}}"
-                           class="last:mr-8  transition ease-in-out rounded-xl shadow-inner shadow-2xl shadow-sky-500 m-1 hover:-translate-y-1 hover:scale-95  duration-300">
+                           class="last:mr-8  transition ease-in-out rounded-xl m-1 hover:-translate-y-1 hover:scale-95  duration-300">
                             <div
                                 class="w-52  rounded-xl">
                                 <div class="snap-center shrink-0 rounded-xl">
