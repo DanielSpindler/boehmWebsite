@@ -6,6 +6,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="icon"
           href="https://watchmecraft.com/_ipx/w_384,q_75/https%3A%2F%2Fwmc-euw.b-cdn.net%2Fprofile%2Fdb.custom.bikes%2Fprofile_pic.webp?url=https%3A%2F%2Fwmc-euw.b-cdn.net%2Fprofile%2Fdb.custom.bikes%2Fprofile_pic.webp&w=384&q=75">
+    <script type="text/javascript" charset="UTF-8"
+            src="//cdn.cookie-script.com/s/66663423d8010812e138d86e710651b2.js"></script>
     <title>DB Custom Bike's</title>
 </head>
 <body class=" opacity-[.98] w-screen h-screen"
