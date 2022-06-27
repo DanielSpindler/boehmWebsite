@@ -12,7 +12,7 @@ class HomeController extends Controller
     {
         try {
             $news = News::all();
-            $products = Product::all();
+            $products = Product::all()->sortByDesc('price');
         } catch (\Exception $e) {
             echo $e;
         }

@@ -1,26 +1,25 @@
 @extends('layout.master')
 
 @section('content')
-    <div class="h-screen overflow-auto">
-        <div class="flex justify-center mt-12 h-1/2 border-b-2 ">
+    <div class="h-screen overflow-x-auto">
+        <div class="flex justify-center mt-12 border-b-2 pb-12">
             <div class="rounded-xl md:w-5/6 ">
                 <div class="rounded-xl mt-12">
+                    <h1 class="text-3xl ml-3 mb-5 font-medium bg-transparent">Featured</h1>
                     <div class="w-full rounded-xl flex snap-mandatory overflow-scroll">
-                        @for($i = 0; $i < count($products); $i++)
+                        @foreach($products as $product)
                             <div
                                 class="snap-center shadow-2xl   sm:w-80 sm:h-120 shrink-0 transition ease-in-out hover:-translate-y-1 hover:scale-95 duration-300">
                                 <div class="sm:w-80 sm:h-120 w-64 h-60 overflow-hidden">
-                                    <a href="{{route('singleProduct',$products[$i]->id)}}" class="">
-                                        <img class=" shadow-xl" src="images/{{$products[$i]->image}}">
+                                    <a href="{{route('singleProduct',$product->id)}}" class="">
+                                        <img class=" shadow-xl" src="images/{{$product->image}}">
                                     </a></div>
-                                <div class="text-center mt-2">{{$products[$i]->name}}
+                                <div class="text-center mt-2">{{$product->name}}
                                 </div>
-                                <div class="text-center mt-2">{{$products[$i]->price}} €</div>
+                                <div class="text-center mt-2">{{$product->price}} €</div>
                             </div>
-                            @if($i === 5)
-                                @php break; @endphp
-                            @endif
-                        @endfor
+
+                        @endforeach
                     </div>
                 </div>
             </div>

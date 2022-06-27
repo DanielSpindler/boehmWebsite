@@ -49,7 +49,7 @@
             <li>
                 <a href="mailto:bewerbung@daniel-spindler.de"
                    class="rounded sm:ml-8 text-black p-2
-                    duration-300" aria-current="page">Kontakt</a>
+                    duration-300" aria-current="page">E-Mail</a>
             </li>
         </ul>
     </div>
@@ -87,9 +87,6 @@
         </li>
         <li>
             <a href="#" class="sm:mr-4 hover:underline md:mr-6">Datenschutz</a>
-        </li>
-        <li>
-            <a href="#" class="sm:mr-4 hover:underline md:mr-6">Kontakt</a>
         </li>
     </ul>
 </footer>
