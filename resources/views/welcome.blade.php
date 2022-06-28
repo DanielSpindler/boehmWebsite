@@ -1,7 +1,7 @@
 @extends('layout.master')
 
 @section('content')
-    <div class="h-screen overflow-x-auto">
+    <div class="h-screen overflow-x-auto scrollbar-hide">
         <div class="flex justify-center mt-12 border-b-2 pb-12">
             <div class="rounded-xl md:w-5/6 ">
                 <div class="rounded-xl mt-12">
