@@ -11,7 +11,7 @@
     <title>DB Custom Bike's</title>
 </head>
 <body class=" opacity-[.98] w-screen h-screen"
-      style="font-family: Futura; background-image: url('/IMG_8305.JPG')">
+      style="font-family: 'Gill Sans'; background-image: url('/IMG_8305.JPG')">
 <header class="flex inline-block">
     <div class="flex flex-auto justify-center w-screen">
         <ul class="flex flex-row mx-auto my-auto font-normal opacity-[.80] bg-slate-100 p-4 pt-6 rounded-b fixed z-40 items-center pt">
