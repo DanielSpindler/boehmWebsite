@@ -1,8 +1,8 @@
 @extends('layout.master')
 
 @section('content')
-    <div class="h-screen overflow-x-auto scrollbar-hide">
-        <div class="flex justify-center mt-12 border-b-2 pb-12">
+    <div class="h-screen scrollbar-hide">
+        <div class="flex justify-center mt-12 border-b-2 pb-12 overflow-x-auto">
             <div class="rounded-xl md:w-5/6 ">
                 <div class="rounded-xl mt-12">
                     <div class="w-full rounded-xl flex snap-mandatory overflow-scroll">
