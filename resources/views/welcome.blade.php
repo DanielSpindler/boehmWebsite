@@ -5,7 +5,6 @@
         <div class="flex justify-center mt-12 border-b-2 pb-12">
             <div class="rounded-xl md:w-5/6 ">
                 <div class="rounded-xl mt-12">
-                    <h1 class="text-3xl ml-3 mb-5 font-medium bg-transparent">Featured</h1>
                     <div class="w-full rounded-xl flex snap-mandatory overflow-scroll">
                         @foreach($products as $product)
                             <div
