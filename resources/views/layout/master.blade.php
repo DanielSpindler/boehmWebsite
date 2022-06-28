@@ -10,7 +10,7 @@
             src="//cdn.cookie-script.com/s/66663423d8010812e138d86e710651b2.js"></script>
     <title>DB Custom Bike's</title>
 </head>
-<body class=" opacity-[.98] w-screen h-screen"
+<body class=" opacity-[.95] w-screen h-screen"
       style="font-family: 'Gill Sans'; background-image: url('/IMG_8305.JPG')">
 <header class="flex inline-block">
     <div class="flex flex-auto justify-center w-screen">
